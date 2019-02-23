@@ -12,3 +12,6 @@ def evaluate(model_file="out/model.h5", test_data="out/preprocessed_test.npz"):
     # Evaluate model
     scores = model.evaluate(x=x_test, y=y_test)
     return scores
+
+if __name__ == "__main__":
+    print(evaluate())
